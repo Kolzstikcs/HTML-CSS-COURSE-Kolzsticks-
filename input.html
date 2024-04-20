@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inputs and Text Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="button"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #0056b3;
+    }
+    label{
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Inputs and Text Boxes</h1>
+
+  <label for="title">Title:</label>
+  <input type="text" id="title" placeholder="Enter Title">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter Email">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" placeholder="Enter Password">
+
+  <label for="message">Message:</label>
+  <textarea id="message" placeholder="Start typing..."></textarea>
+
+  <label for="checkbox">Checkbox:</label>
+  <input type="checkbox" id="checkbox">
+
+  <label for="color">Favorite Color:</label>
+  <input type="color" id="color">
+
+  <label for="date">Date:</label>
+  <input type="date" id="date">
+
+  <label for="time">Time:</label>
+  <input type="time" id="time">
+
+ <label for="btn">Button:</label>
+  <input type="button" value="Submit" id="btn">
+</body>
+
+</html>
